@@ -1,1 +1,48 @@
-<p>login works!</p>
+// Smooth scroll to login or register page
+document.getElementById('loginBtn').addEventListener('click', function() {
+    window.location.href = "login.html"; // Redirects to login page
+});
+
+document.getElementById('registerBtn').addEventListener('click', function() {
+    window.location.href = "register.html"; // Redirects to register page
+});
+
+// Function to display a dynamic greeting based on the time of day
+function displayGreeting() {
+    const greetingElement = document.createElement('p');
+    const hour = new Date().getHours();
+    let greetingText;
+
+    if (hour < 12) {
+        greetingText = "Good Morning!";
+    } else if (hour < 18) {
+        greetingText = "Good Afternoon!";
+    } else {
+        greetingText = "Good Evening!";
+    }
+
+    greetingElement.textContent = greetingText;
+    greetingElement.className = 'greeting';
+    
+    // Append greeting to the header
+    const header = document.querySelector('header');
+    header.appendChild(greetingElement);
+}
+
+// Call the function to display greeting
+displayGreeting();
+
+// Button hover effect using JavaScript for scaling animation
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        button.style.transform = 'scale(1.1)';
+        button.style.transition = 'transform 0.3s ease';
+    });
+
+    button.addEventListener('mouseleave', () => {
+        button.style.transform = 'scale(1)';
+    });
+});
+
