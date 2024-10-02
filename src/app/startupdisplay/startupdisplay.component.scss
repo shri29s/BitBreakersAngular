@@ -1,0 +1,45 @@
+/* Styling the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table styling */
+table.company-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table headers */
+.company-table th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table cells */
+.company-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra stripes for table rows */
+.company-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+.company-table tr:hover {
+    background-color: #f1f1f1;
+}
