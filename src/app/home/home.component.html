@@ -12,10 +12,11 @@
 
 <section id="startups">
     <h2>Manage Startups</h2>
-    <form id="startupForm">
-        <input type="text" id="name" placeholder="Startup Name" required>
-        <input type="text" id="address" placeholder="Address" required>
-        <input type="email" id="contact" placeholder="Contact Email" required>
+
+    <form (ngSubmit)="onSubmit()" id="startupForm">
+        <input type="text" name="name" id="name" [(ngModel)]="startup.name" placeholder="Startup Name" required>
+        <input type="text" name="address" id="address" [(ngModel)]="startup.address" placeholder="Address" required>
+        <input type="email" name="email" id="contact" [(ngModel)]="startup.email" placeholder="Contact Email" required>
         <button type="submit">Add Startup</button>
     </form>
     <ul id="startupList"></ul>
