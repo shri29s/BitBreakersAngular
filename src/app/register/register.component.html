@@ -1,1 +1,38 @@
-<p>register works!</p>
+
+    <header>
+        <h1>Startup Registration</h1>
+    </header>
+
+    <main>
+        <form id="startup-signup" action="submit_signup.php" method="post"> <!-- Action should point to your server-side processing script -->
+            <label for="startup-name">Name of Startup:</label>
+            <input type="text" id="startup-name" name="startup_name" required>
+
+            <label for="founder-email">Email Address of Founder:</label>
+            <input type="email" id="founder-email" name="founder_email" required>
+
+            <label for="certificates">Certificates Received:</label>
+            <textarea id="certificates" name="certificates" rows="4" required></textarea>
+
+            <label for="grants">Grants Received:</label>
+            <textarea id="grants" name="grants" rows="4" required></textarea>
+
+            <label for="publications">Mentioned in Magazines or Websites:</label>
+            <textarea id="publications" name="publications" rows="4" required></textarea>
+
+            <label for="research-papers">Research Papers:</label>
+            <textarea id="research-papers" name="research_papers" rows="4" required></textarea>
+
+            <label for="funds-taken">Funds Taken:</label>
+            <textarea id="funds-taken" name="funds_taken" rows="4" required></textarea>
+
+            <label for="equity-split">Equity Split of Company:</label>
+            <textarea id="equity-split" name="equity_split" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fueling Startups | Privacy Policy | Terms of Service</p>
+    </footer>
