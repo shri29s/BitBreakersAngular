@@ -10,36 +10,36 @@ body {
     color: black;
 }
 
-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color:   rgb(47, 156, 125);
+    background-color: rgb(47, 156, 125);
 }
 
-header .logo img {
+#header .logo img {
     width: 90px;
     border-radius: 100%;
 }
 
-header nav ul {
+#header nav ul {
     list-style: none;
     display: flex;
 }
 
-header nav ul li {
+#header nav ul li {
     margin-left: 20px;
 }
 
-header nav ul li a {
+#header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
+    // background: url('hero-background.jpg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ header nav ul li a {
 }
 
 .cta-button {
-    background-color:  rgb(47, 156, 125);  
+    background-color: rgb(47, 156, 125);
     padding: 15px 30px;
     color: white;
     text-decoration: none;
@@ -71,10 +71,13 @@ header nav ul li a {
 }
 
 .cta-button:hover {
-    background-color:  rgb(47, 156, 125);
+    background-color: rgb(47, 156, 125);
 }
 
-.how-it-works, .featured-startups, .testimonials, .cta-section {
+.how-it-works,
+.featured-startups,
+.testimonials,
+.cta-section {
     padding: 60px 20px;
     text-align: center;
 }
@@ -102,13 +105,15 @@ header nav ul li a {
 
 footer {
     padding: 20px;
-    background-color:  rgb(47, 156, 125);
+    background-color: rgb(47, 156, 125);
     color: white;
     text-align: center;
 }
-.logo{
+
+.logo {
     border-radius: 100%;
 }
-.st1{
+
+.st1 {
     height: 300px;
 }
